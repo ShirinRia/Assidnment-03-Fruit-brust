@@ -29,6 +29,12 @@
       .font-fam{
         font-family: 'Montserrat', sans-serif;
       }
+      @media screen and (max-width: 768px){
+        .item-2{
+        grid-row-start: 1;
+      }
+      }
+      
     </style>
 </head>
 <body class="font-fam">
@@ -474,8 +480,8 @@
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-full">
-              <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-              <p class="mb-5 text-base font-medium text-text-cus-color lg:w-[725px] mx-auto text-center lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              <h1 class="mb-5 text-5xl font-bold text-white">Meet the team section</h1>
+              <p class="mb-5 text-base font-medium text-white lg:w-[725px] mx-auto text-center ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               <div class="flex flex-col lg:flex-row mx-auto justify-center items-center ">
                 <div class="card w-96 bg-transparent">
                   <figure class="px-10 pt-10">
@@ -542,8 +548,8 @@
 
      
         <section class="my-40">
-          <div class="text-center">
-            <h1 class="text-5xl font-bold">
+          <div class="text-center my-12">
+            <h1 class="text-5xl font-bold mb-8">
               Why Choose Us
             </h1>
             <p class="text-base font-medium text-text-cus-color lg:w-[725px] mx-auto ">
@@ -553,19 +559,19 @@
             </p>
           </div>
 
-          <div class="flex flex-col lg:flex-row">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center lg:text-left">
             <!-- left -->
-            <div class="space-y-11">
-              <div class="flex max-w-lg items-start gap-2">
-                <div class="bg-gray-300 w-20 h-12 rounded-[50%] p-1 flex items-center">
-                  <img class="w-full" src="./images/group.png"  alt="">
+            <div class="space-y-11 justify-center lg:justify-start mx-auto">
+              <div class="flex flex-col lg:flex-row max-w-lg justify-center items-center lg:items-start gap-2">
+                <div class="bg-gray-300 w-12 lg:w-20 h-12 rounded-[50%] p-1 flex justify-center items-center">
+                  <img class="w-[80%]" src="./images/group.png"  alt="">
                 </div>
                
-                <div>
+                <div class="space-y-3">
                   <h2 class="text-2xl font-extrabold">
                     Dedicated Team
                   </h2>
-                  <hr class="border-2 mr-[70%] border-black">
+                  <hr class="border-2 ml-[35%] lg:ml-[0%] mr-[35%] lg:mr-[70%] border-black">
                   <p class="text-base font-medium text-text-cus-color mx-auto ">
                     Professional employees are there for you to pick the most amazing and fresh fruits.
                   </p>
@@ -573,30 +579,31 @@
                 
               </div>
 
-              <div class="flex max-w-lg items-start gap-2">
-                <div class="bg-gray-300 w-20 h-12 rounded-[50%] p-1 flex items-center">
-                  <img class="w-full" src="./images/hearts.png"  alt="">
+              <div class="flex flex-col lg:flex-row max-w-lg justify-center items-center lg:items-start gap-2">
+                <div class="bg-gray-300 w-12 lg:w-20 h-12 rounded-[50%] p-1 flex items-center justify-center">
+                  <img class="w-[80%]" src="./images/hearts.png"  alt="">
                 </div>
-               <div>
+               <div class="space-y-3">
                 <h2 class="text-2xl font-extrabold">
                   Fresh is Best
                 </h2>
-                <hr class="border-2 mr-[70%] border-black">
+                <hr class="border-2 ml-[35%] lg:ml-[0%] mr-[35%] lg:mr-[70%] border-black">
                 <p class="text-base font-medium text-text-cus-color mx-auto ">
                   Professional employees are there for you to pick the most amazing and fresh fruits.
                 </p>
                </div>
               </div>
 
-              <div class="flex max-w-lg items-start gap-2">
-                <div class="bg-gray-300 w-20 h-12 rounded-[50%] p-1 flex items-center ">
-                  <img class="w-full" src="./images/gift-box.png"  alt="">
+              <div class="flex flex-col lg:flex-row max-w-lg justify-center items-center lg:items-start gap-2">
+                <div class="bg-gray-300 w-12 lg:w-20 lg:w-20 h-12 rounded-[50%] p-1 flex items-center justify-center">
+                  <img class="w-[80%]" src="./images/gift-box.png"  alt="">
                 </div>
-                <div>
+                <div class="space-y-3">
                   <h2 class="text-2xl font-extrabold">
                     Gift Certificates
                   </h2>
-                  <hr class="border-2 mr-[70%] border-black">
+                  <!-- <hr class="border-2 mr-[70%] border-black"> -->
+                  <hr class="border-2 ml-[35%] lg:ml-[0%] mr-[35%] lg:mr-[70%] border-black">
                   <p class="text-base font-medium text-text-cus-color mx-auto ">
                     Professional employees are there for you to pick the most amazing and fresh fruits.
                   </p>
@@ -605,54 +612,54 @@
 
             </div>
 <!-- image -->
-            <div>
-              <img src="./images/whychoose1.png" alt="">
+            <div class="item-2">
+              <img class="w-full h-full" src="./images/whychoose1.png" alt="">
             </div>
 
    <!-- right -->
-   <div class="space-y-11">
-    <div class="flex flex-row-reverse max-w-lg items-start gap-2">
-      <div class="bg-gray-300 w-20 h-12 rounded-[50%] p-1 flex items-center">
-        <img class="w-full" src="./images/fruits.png"  alt="">
+   <div class="space-y-11 text-center lg:text-right mx-auto">
+    <div class="flex flex-col lg:flex-row-reverse max-w-lg justify-center items-center lg:items-start gap-2">
+      <div class="bg-gray-300 w-12 lg:w-20 h-12 rounded-[50%] p-1 flex items-center justify-center">
+        <img class="w-[80%]" src="./images/fruits.png"  alt="">
       </div>
      
-      <div>
-        <h2 class="text-2xl font-extrabold text-right">
-          Dedicated Team
+      <div class="space-y-3">
+        <h2 class="text-2xl font-extrabold">
+          Integrated Supplier
         </h2>
-        <hr class="border-2 ml-[70%] border-black">
-        <p class="text-base font-medium text-right text-text-cus-color mx-auto ">
+        <hr class="border-2 mr-[35%] lg:mr-[0%] ml-[35%] lg:ml-[70%] border-black">
+        <p class="text-base font-medium text-text-cus-color mx-auto ">
           Professional employees are there for you to pick the most amazing and fresh fruits.
         </p>
       </div>
       
     </div>
 
-    <div class="flex flex-row-reverse max-w-lg items-start gap-2">
-      <div class="bg-gray-300 w-20 h-12 rounded-[50%] p-1 flex items-center">
-        <img class="w-full" src="./images/ice-cream.png"  alt="">
+    <div class="flex flex-col lg:flex-row-reverse max-w-lg justify-center items-center lg:items-start gap-2">
+      <div class="bg-gray-300 w-12 lg:w-20 h-12 rounded-[50%] p-1 flex items-center justify-center">
+        <img class="w-[80%]" src="./images/ice-cream.png"  alt="">
       </div>
-     <div>
-      <h2 class="text-2xl font-extrabold text-right">
-        Fresh is Best
+     <div class="space-y-3">
+      <h2 class="text-2xl font-extrabold">
+        Sustainable Practice
       </h2>
-      <hr class="border-2 ml-[70%] border-black">
-      <p class="text-base font-medium text-right text-text-cus-color mx-auto ">
+      <hr class="border-2 mr-[35%] lg:mr-[0%] ml-[35%] lg:ml-[70%] border-black">
+      <p class="text-base font-medium text-text-cus-color mx-auto ">
         Professional employees are there for you to pick the most amazing and fresh fruits.
       </p>
      </div>
     </div>
 
-    <div class="flex flex-row-reverse max-w-lg items-start gap-2">
-      <div class="bg-gray-300 w-20 h-12 rounded-[50%] p-1 flex items-center ">
-        <img class="w-full" src="./images/like.png"  alt="">
+    <div class="flex flex-col lg:flex-row-reverse max-w-lg justify-center items-center lg:items-start gap-2">
+      <div class="bg-gray-300 w-12 lg:w-20 h-12 rounded-[50%] p-1 flex items-center justify-center">
+        <img class="w-[80%]" src="./images/like.png"  alt="">
       </div>
-      <div>
-        <h2 class="text-2xl text-right font-extrabold ">
-          Gift Certificates
+      <div class="space-y-3">
+        <h2 class="text-2xl font-extrabold ">
+          The Benefits Only
         </h2>
-        <hr class="border-2 ml-[70%] border-black">
-        <p class="text-base font-medium text-right text-text-cus-color mx-auto ">
+        <hr class="border-2 mr-[35%] lg:mr-[0%] ml-[35%] lg:ml-[70%] border-black">
+        <p class="text-base font-medium text-text-cus-color mx-auto ">
           Professional employees are there for you to pick the most amazing and fresh fruits.
         </p>
       </div>
@@ -671,13 +678,13 @@
       </div>
       <div>
         
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Shop</a></li>
-          <li><a>All Fruits</a></li>
-          <li><a>Support</a></li>
-          <li><a>My Account</a></li>
+        <ul class="menu menu-horizontal px-1 flex content-center">
+          <li><a class="hover:text-primary-color ">Home</a></li>
+          <li><a class="hover:text-primary-color ">About Us</a></li>
+          <li><a class="hover:text-primary-color ">Shop</a></li>
+          <li><a class="hover:text-primary-color ">All Fruits</a></li>
+          <li><a class="hover:text-primary-color ">Support</a></li>
+          <li><a class="hover:text-primary-color ">My Account</a></li>
         </ul>
       </div> 
       <div>
