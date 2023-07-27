@@ -42,11 +42,11 @@
         <nav class="relative" >
           <div class="lg:bg-primary-color rounded-full text-white navbar flex-row-reverse lg:flex-row ">
             <div class="navbar-start">
-              <div class="dropdown lg:hidden">
+              <div class="dropdown ml-56 lg:hidden">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="absolute -left-[98px] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-28">
                   <li><a>Home</a></li>
                   <li><a>Shop</a></li>
                   <li><a>About Us</a></li>
@@ -68,16 +68,16 @@
               <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
             </div>
             <div class=" hidden lg:flex navbar-end">
-              <div class="form-control">
-                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" 
+              <div class=" flex flex-row  md:w-auto bg-white rounded-full px-4">
+                <input type="text" placeholder="Search" class="border-none outline-none w-full bg-transparent" 
                 />
-                <!-- <button class="btn btn-ghost btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button> -->
+                <button class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
               </div>
-              <button class="btn btn-ghost btn-circle">
+              <!-- <button class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              </button>
+              </button> -->
               
             </div>
           </div>
@@ -203,7 +203,7 @@
               Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
             </p>
           </div>
-          <div class="text-center ">
+          <div class="text-center mx-auto lg:mx-0">
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div class="flex flex-col">
                 <span class="countdown font-extrabold text-5xl">
@@ -257,17 +257,17 @@
             <hr class="w-full border-gray-200">
             <p class="text-base font-medium text-text-cus-color">Apples</p>
             <div class="rating rating-lg rating-half">
-              <input type="radio" name="rating-10" class="rating-hidden" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10f" class="rating-hidden" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10f" class="bg-primary-color mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions bg-none">
               <!-- <button class="text-primary-color text-lg font-extrabold">Buy Now</button> 
@@ -284,17 +284,17 @@
                     <h2 class="card-title text-4xl font-extrabold">Apples</h2>
                     <p class="text-base font-medium text-text-cus-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     <div class="rating rating-lg rating-half">
-                      <input type="radio" name="rating-10" class="rating-hidden" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ff" class="rating-hidden" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ff" class="bg-primary-color mask mask-star-2 mask-half-2" />
                     </div>
                     <div class="card-actions bg-none">
                       <button class="btn bg-white border-primary-color text-primary-color text-lg font-extrabold hover:bg-primary-color hover:text-white">Close</button>
@@ -316,17 +316,17 @@
             <hr class="w-full border-gray-200">
             <p class="text-base font-medium text-text-cus-color">Orange</p>
             <div class="rating rating-lg rating-half">
-              <input type="radio" name="rating-10" class="rating-hidden" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10s" class="rating-hidden" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10s" class="bg-primary-color mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions bg-none">
               <!-- <button class="text-primary-color text-lg font-extrabold">Buy Now</button> 
@@ -343,17 +343,17 @@
                     <h2 class="card-title text-4xl font-extrabold">Orange</h2>
                     <p class="text-base font-medium text-text-cus-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     <div class="rating rating-lg rating-half">
-                      <input type="radio" name="rating-10" class="rating-hidden" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ss" class="rating-hidden" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10ss" class="bg-primary-color mask mask-star-2 mask-half-2" />
                     </div>
                     <div class="card-actions bg-none">
                       <button class="btn bg-white border-primary-color text-primary-color text-lg font-extrabold hover:bg-primary-color hover:text-white">Close</button>
@@ -375,17 +375,17 @@
             <hr class="w-full border-gray-200">
             <p class="text-base font-medium text-text-cus-color">Red Dragon</p>
             <div class="rating rating-lg rating-half">
-              <input type="radio" name="rating-10" class="rating-hidden" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-              <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10th" class="rating-hidden" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10th" class="bg-primary-color mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions bg-none">
               <!-- <button class="text-primary-color text-lg font-extrabold">Buy Now</button> 
@@ -402,17 +402,17 @@
                     <h2 class="card-title text-4xl font-extrabold">Red Dragon</h2>
                     <p class="text-base font-medium text-text-cus-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     <div class="rating rating-lg rating-half">
-                      <input type="radio" name="rating-10" class="rating-hidden" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10thi" class="rating-hidden" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10thi" class="bg-primary-color mask mask-star-2 mask-half-2" />
                     </div>
                     <div class="card-actions bg-none">
                       <button class="btn bg-white border-primary-color text-primary-color text-lg font-extrabold hover:bg-primary-color hover:text-white">Close</button>
@@ -461,17 +461,17 @@
                     <h2 class="card-title text-4xl font-extrabold">Banana</h2>
                     <p class="text-base font-medium text-text-cus-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     <div class="rating rating-lg rating-half">
-                      <input type="radio" name="rating-11" class="rating-hidden" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
-                      <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
                     </div>
                     <div class="card-actions bg-none">
                       <button class="btn bg-white border-primary-color text-primary-color text-lg font-extrabold hover:bg-primary-color hover:text-white">Close</button>
